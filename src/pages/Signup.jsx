@@ -30,7 +30,7 @@ const Signup = () => {
   }
   return (
     <form onSubmit={handleSubmit} style={{display:"flex",flexDirection:"column",gap:"14px",alignItems:'center',marginTop:"15%"}}>
-        <h2>Signup</h2>
+        <h2>Admin-Signup</h2>
         <input value={username} onChange={(e)=>setUsername(e.target.value)} placeholder="Enter email" style={{padding:"8px",borderRadius:'4px',width:"330px"}} />
         <input value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter password" style={{padding:"8px",borderRadius:'4px',width:"330px"}} />
         <button style={{padding:"8px",borderRadius:'4px',width:"200px",backgroundColor:"pink",cursor:"pointer"}}>Submit</button>
