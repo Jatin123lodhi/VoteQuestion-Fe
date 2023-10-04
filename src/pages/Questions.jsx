@@ -33,7 +33,7 @@ const Questions = () => {
   };
   const getQuestions = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/questions");
+      const res = await axios.get(`${SERVER_BASE_URL}/questions`);
       console.log(res?.data?.response);
       setAllQuestion(res?.data?.response);
     } catch (e) {
